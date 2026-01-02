@@ -33,7 +33,9 @@ This project was created based on a Frontend Mentor [https://www.frontendmentor.
 - Optimize images and consider using modern formats for better performance
 - Add light animations or transitions to enhance user experience without overwhelming the interface
 
-## 🍿 Video
-
+## 🍿 How does the web-page look like?
+<img width="2619" height="1332" alt="Image" src="https://github.com/user-attachments/assets/df8d4428-7517-4cec-ad2c-49425d4a15fe" />
+<img width="1618" height="1542" alt="Image" src="https://github.com/user-attachments/assets/b2df9076-438b-4ef2-9aa1-0226297ad7a5" />
+<img width="732" height="1669" alt="Image" src="https://github.com/user-attachments/assets/24dd4210-2fce-4c93-80ba-db0f56a4267d" />
 
 
