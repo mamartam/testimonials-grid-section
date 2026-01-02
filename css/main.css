@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(214, 17%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+main {
+  width: 90%;
+  max-width: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 25px;
+}
+.user-container {
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px hsl(0, 0%, 81%);
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+.user-photo {
+  display: block;
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 25px;
+}
+.user-comment {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+.user-container h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0.25px;
+}
+.user-info p span {
+  font-size: 13px;
+}
+.daniel-clifford-card {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.daniel-clifford-card .bg-pattern-quotation {
+  display: none;
+}
+
+.jonathan-walters-card {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 92%);
+}
+
+.jeanette-harmon-card {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 10%, 45%);
+}
+
+.patrick-abrams-card {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+
+.kira-whittle-card {
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  main {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(16, auto);
+    max-width: 800px;
+    gap: 15px;
+  }
+
+  .daniel-clifford-card {
+    position: relative;
+    grid-column: 1/7;
+    grid-row: 1/7;
+    z-index: 1;
+  }
+  .daniel-clifford-card p,
+  .daniel-clifford-card h2 {
+    position: relative;
+    z-index: 2;
+  }
+  .daniel-clifford-card img {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    z-index: 0;
+  }
+  .jonathan-walters-card {
+    grid-column: 7/10;
+    grid-row: 1/7;
+  }
+
+  .jeanette-harmon-card {
+    grid-column: 1/4;
+    grid-row: 7/13;
+  }
+
+  .patrick-abrams-card {
+    grid-column: 4/10;
+    grid-row: 7/13;
+  }
+
+  .kira-whittle-card {
+    grid-column: 1/10;
+    grid-row: 13/17;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 1200px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, auto);
+    gap: 20px;
+  }
+
+  .daniel-clifford-card {
+    position: relative;
+    grid-column: 1/7;
+    grid-row: 1/7;
+    z-index: 1;
+  }
+  .daniel-clifford-card p,
+  .daniel-clifford-card h2,
+  .user-photo {
+    position: relative;
+    z-index: 3;
+  }
+  .daniel-clifford-card .bg-pattern-quotation {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    z-index: 0;
+  }
+  .jonathan-walters-card {
+    grid-column: 7/10;
+    grid-row: 1/7;
+  }
+
+  .jeanette-harmon-card {
+    grid-column: 1/4;
+    grid-row: 7/13;
+  }
+
+  .patrick-abrams-card {
+    grid-column: 4/10;
+    grid-row: 7/13;
+  }
+
+  .kira-whittle-card {
+    grid-column: 10/13;
+    grid-row: 1/13;
+  }
+}
